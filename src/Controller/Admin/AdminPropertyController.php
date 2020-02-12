@@ -1,6 +1,7 @@
 <?php
 namespace App\Controller\Admin;
 
+use App\Entity\Option;
 use App\Entity\Property;
 use App\Form\PropertyType;
 use App\Repository\PropertyRepository;
@@ -46,11 +47,13 @@ class AdminPropertyController extends  AbstractController {
      * @param Property $property
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
+     *
      */
     public function edit(Property $property, Request $request){
         $form = $this->createForm(PropertyType::class,$property);
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid()){
+            $this->em->persist($property);
             $this->em->flush();
             $this->addFlash('success','Bien modifié avec succès!');
             return $this->redirectToRoute('admin.property.index');
