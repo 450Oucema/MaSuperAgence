@@ -7,6 +7,7 @@ use App\Repository\PropertyRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class AdminPropertyController extends  AbstractController {
@@ -41,7 +42,7 @@ class AdminPropertyController extends  AbstractController {
     }
 
     /**
-     * @Route("/admin/property/{id}",name="admin.property.edit")
+     * @Route("/admin/property/{id}",name="admin.property.edit", methods="POST|GET")
      * @param Property $property
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
@@ -51,6 +52,7 @@ class AdminPropertyController extends  AbstractController {
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid()){
             $this->em->flush();
+            $this->addFlash('success','Bien modifié avec succès!');
             return $this->redirectToRoute('admin.property.index');
         }
 
@@ -81,6 +83,18 @@ class AdminPropertyController extends  AbstractController {
             'property'=>$property,
             'form'=>$form->createView()
         ]);
+    }
+    /**
+     * @Route("/admin/property/{id}", name="admin.property.delete", methods="DELETE")
+     */
+    public function delete(Property $property, Request $request){
+        if($this->isCsrfTokenValid('delete'. $property->getId(), $request->get('_token'))){
+            $this->em->remove($property);
+            $this->em->flush();
+            $this->addFlash('success','Bien supprimé avec succès!');
+        }
+
+        return $this->redirectToRoute('admin.property.index');
     }
     
 }
