@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6190298a-ff02-4d8a-ac95-552f8de29488" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/knp_paginator.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/PropertySearch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/property/_property.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/KnpPaginatorBundle.fr.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MaSuperAgence.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MaSuperAgence.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PropertyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/property/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +189,9 @@
       <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XccSvGxFYxg7wR7YTEidBrgnbf" />
@@ -205,6 +209,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -228,7 +233,7 @@
       <workItem from="1581418903085" duration="512000" />
       <workItem from="1581419423273" duration="29000" />
       <workItem from="1581419459984" duration="15909000" />
-      <workItem from="1581494259387" duration="9646000" />
+      <workItem from="1581494259387" duration="17196000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit, découverte de doctrine">
       <created>1581412379935</created>
@@ -256,10 +261,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="706" y="285" key="#Custom_Plugin_Repositories/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581419222296" />
-    <state x="872" y="359" key="#Inspections" timestamp="1581502415696">
+    <state x="872" y="359" key="#Inspections" timestamp="1581509232460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="359" key="#Inspections/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581502415696" />
+    <state x="872" y="359" key="#Inspections/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581509232460" />
     <state x="987" y="291" key="#PHP" timestamp="1581411140637">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -268,6 +273,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="359" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581412292624" />
+    <state x="1073" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1581508072943">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1073" y="416" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581508072943" />
     <state x="1010" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581502403335">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -281,6 +290,10 @@
     </state>
     <state x="-1180" y="322" key="FileChooserDialogImpl/0.0.2560.1400/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1581349103123" />
     <state x="987" y="389" key="FileChooserDialogImpl/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581419448616" />
+    <state x="1054" y="515" key="NewPhpClassDialog" timestamp="1581507222263">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1054" y="515" key="NewPhpClassDialog/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581507222263" />
     <state x="1060" y="608" key="NewPhpFileDialog" timestamp="1581498640357">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -312,9 +325,9 @@
     </state>
     <state x="-1304" y="270" key="run.anything.popup/0.0.2560.1400/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1581436377416" />
     <state x="821" y="326" key="run.anything.popup/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581410907202" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1581420386586">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1581509254081">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581420386586" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581509254081" />
   </component>
 </project>
