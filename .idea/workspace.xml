@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6190298a-ff02-4d8a-ac95-552f8de29488" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminPropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminPropertyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/property/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +206,7 @@
       <workItem from="1581418903085" duration="512000" />
       <workItem from="1581419423273" duration="29000" />
       <workItem from="1581419459984" duration="15909000" />
-      <workItem from="1581494259387" duration="1449000" />
+      <workItem from="1581494259387" duration="2752000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit, découverte de doctrine">
       <created>1581412379935</created>
