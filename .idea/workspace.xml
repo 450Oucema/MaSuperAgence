@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6190298a-ff02-4d8a-ac95-552f8de29488" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ContactType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Notification/ContactNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/emails/contact.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/jsp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MaSuperAgence.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MaSuperAgence.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PropertyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/property/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/property/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +73,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -207,6 +203,7 @@
       <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XccSvGxFYxg7wR7YTEidBrgnbf" />
@@ -228,6 +225,7 @@
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Form" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -260,7 +258,7 @@
       <workItem from="1581419459984" duration="15909000" />
       <workItem from="1581494259387" duration="17711000" />
       <workItem from="1581519408810" duration="5360000" />
-      <workItem from="1581581408485" duration="14765000" />
+      <workItem from="1581581408485" duration="22921000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit, découverte de doctrine">
       <created>1581412379935</created>
@@ -301,15 +299,16 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="706" y="285" key="#Custom_Plugin_Repositories/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581419222296" />
-    <state x="872" y="399" key="#Inspections" timestamp="1581583908613">
+    <state x="872" y="399" key="#Inspections" timestamp="1581598515755">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="872" y="359" key="#Inspections/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581509232460" />
-    <state x="872" y="399" key="#Inspections/0.40.2560.1400/-1920.40.1920.1160@0.40.2560.1400" timestamp="1581583908613" />
-    <state x="987" y="291" key="#PHP" timestamp="1581411140637">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="872" y="399" key="#Inspections/0.40.2560.1400/-1920.40.1920.1160@0.40.2560.1400" timestamp="1581598515755" />
+    <state x="987" y="331" key="#PHP" timestamp="1581603081937">
+      <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="987" y="291" key="#PHP/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581411140637" />
+    <state x="987" y="331" key="#PHP/0.40.2560.1400/-1920.40.1920.1160@0.40.2560.1400" timestamp="1581603081937" />
     <state x="872" y="359" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581412292624">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -381,10 +380,11 @@
     </state>
     <state x="-1304" y="270" key="run.anything.popup/0.0.2560.1400/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1581436377416" />
     <state x="821" y="326" key="run.anything.popup/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581410907202" />
-    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1581597221371">
-      <screen x="0" y="40" width="2560" height="1400" />
+    <state x="-1213" y="301" width="672" height="562" key="search.everywhere.popup" timestamp="1581604948525">
+      <screen x="-1920" y="40" width="1920" height="1160" />
     </state>
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581509254081" />
-    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.40.2560.1400/-1920.40.1920.1160@0.40.2560.1400" timestamp="1581597221371" />
+    <state x="-1213" y="301" width="672" height="562" key="search.everywhere.popup/0.40.2560.1400/-1920.40.1920.1160@-1920.40.1920.1160" timestamp="1581604948525" />
+    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.40.2560.1400/-1920.40.1920.1160@0.40.2560.1400" timestamp="1581602236566" />
   </component>
 </project>
