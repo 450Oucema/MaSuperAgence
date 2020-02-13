@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6190298a-ff02-4d8a-ac95-552f8de29488" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/admin/option/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/option/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/option/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/option/new.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminPropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminPropertyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PropertyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertyType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/PropertySearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/PropertySearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/PropertySearchType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertySearchType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/property/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/edit.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/property/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +236,8 @@
       <workItem from="1581419423273" duration="29000" />
       <workItem from="1581419459984" duration="15909000" />
       <workItem from="1581494259387" duration="17711000" />
-      <workItem from="1581519408810" duration="5196000" />
+      <workItem from="1581519408810" duration="5360000" />
+      <workItem from="1581581408485" duration="1601000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit, découverte de doctrine">
       <created>1581412379935</created>
@@ -260,7 +257,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -295,10 +294,11 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="1047" y="543" key="#com.intellij.fileTypes.FileTypeChooser/0.40.2560.1400/-1920.40.1920.1160@0.40.2560.1400" timestamp="1581520453942" />
-    <state x="1073" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1581508072943">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="1073" y="456" key="#com.intellij.ide.util.MemberChooser" timestamp="1581581755614">
+      <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="1073" y="416" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581508072943" />
+    <state x="1073" y="456" key="#com.intellij.ide.util.MemberChooser/0.40.2560.1400/-1920.40.1920.1160@0.40.2560.1400" timestamp="1581581755614" />
     <state x="895" y="40" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581520224050">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
@@ -355,10 +355,10 @@
     </state>
     <state x="-1304" y="270" key="run.anything.popup/0.0.2560.1400/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1581436377416" />
     <state x="821" y="326" key="run.anything.popup/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581410907202" />
-    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1581521635229">
+    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1581582142695">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1581509254081" />
-    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.40.2560.1400/-1920.40.1920.1160@0.40.2560.1400" timestamp="1581521635229" />
+    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.40.2560.1400/-1920.40.1920.1160@0.40.2560.1400" timestamp="1581582142695" />
   </component>
 </project>
