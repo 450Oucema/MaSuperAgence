@@ -7,6 +7,8 @@
              {{ message }}
         </div>
         {% endfor %}
+        {% if not form.vars.valid %}
+        <div class="alert alert-danger">Erreur</div>
     <h1>Gérer les biens</h1>
     </div>
           <table class="table table-striped">
